@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400&family=Montserrat:wght@100;200;300;400&family=Roboto:wght@100&display=swap');
+@import 'animate.css';
+
+:root {
+    --color-texto: black;
+    --padding-defecto: 20px;
+    --fondo-defecto: #fff;
+    --fondo-defecto-darkMode: rgb(26, 25, 25);
+    --fondo-section: #a6e593;
+    --fondo-item-beneficio: #b3e28c;
+    --btn-color: var(--btn-color-hover);
+    --btn-color-hover: #F3B562;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.explore {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.component {
+    overflow: hidden;
+}
+
+.explore-title {
+    background-color: var(--fondo-section);
+    font-family: 'Roboto', sans-serif;
+}
+
+.article-beneficios1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.img-article{
+    /* min-width: 10rem;
+    max-width: 20rem; */
+    border-radius: 1rem;
+}
+
+.img-history{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.video-responsive {
+    position: relative;
+    margin: 0.5rem;
+}
+.video-iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.list-content,
+.content-article{
+    padding: 0.5rem;
+}
+
+.item{
+    list-style: none;
+}
+
+.item-title{
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: var(--btn-color);
+}
+
+.item-title:hover{
+    color: var(--fondo-item-beneficio);
+}
+
+/* primer corte - movil  */
+
+@media only screen and (max-width: 425px) {
+
+    .component {
+        min-height: 10rem;
+    }
+
+    .explore-title {
+        font-size: 1rem;
+        padding: 1rem;
+        min-height: 5rem;
+        height: 5rem;
+    }
+
+    .section-title {
+        position: absolute;
+        margin: 0;
+    }
+
+    .content-article-1{
+        margin: 2%;
+    }
+
+    .img-article,
+    .img-beneficios{
+        padding: 1rem;
+    }
+
+    .article-beneficios1,
+    .article-beneficios2,
+    .article-beneficios3{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .article-beneficios3{
+        padding: 0.5rem;
+    }
+    
+    .img-article,
+    .img-beneficios,
+    .header-article,
+    .content-article{
+    width: 100vw;
+    }
+
+    .header-title{
+        margin: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 688px){
+
+    .component {
+        min-height: 10rem;
+    }
+
+    .explore-title {
+        font-size: 1rem;
+        padding: 1rem;
+        min-height: 5rem;
+        height: 5rem;
+    }
+
+    .section-title {
+        position: absolute;
+        margin: 0;
+    }
+
+    .img-article,
+    .img-beneficios{
+        padding: 2rem;
+    }
+
+    .header-title{
+        font-size: 2rem;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .article-beneficios1,
+    .article-beneficios2,
+    .article-beneficios3{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .img-article,
+    .img-beneficios,
+    .header-article,
+    .content-article{
+    width: 100vw;
+    }
+
+    .article-beneficios2{
+        height: 25rem;
+    }
+
+    .video-responsive{
+        margin-top: 7%;
+        width: 80%;
+        height: 60%;
+    }
+
+    .content-article{
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+
+    .item-title{
+        font-size: 1.5rem;
+    }
+
+    .list-content{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+@media only screen and (min-width: 688px) and (max-width: 1440px){
+ 
+    .content-article-wrap{
+        padding: 0;
+        margin: 0;
+    }
+
+    .article-beneficios1{
+        display: flex;
+        justify-content: end;
+    }
+
+    .header-article-title-1,
+    .content-article-1{
+        font-size: 2.8rem;
+        font-family: 'Montserrat', sans-serif;
+        padding: 1rem;
+    }
+    
+    .header-title{
+        font-size: 2rem;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .article-beneficios2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20rem;
+        padding: 1rem;
+    }
+
+    .header-article-title-2{
+        font-size: 2.5rem;
+        font-weight: 100;
+    }
+
+    .header-article-title-2:hover{
+        transition: 1s;
+        color: palegreen;
+    }
+
+    .video-responsive{
+        width: 100%;
+        height: 100%;
+    }
+
+    .content-article{
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+
+    .item-title{
+        font-size: 1.5rem;
+    }
+
+    .img-article-3{
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .list-content{
+        margin: 0;
+        padding: 0;
+    }
+}

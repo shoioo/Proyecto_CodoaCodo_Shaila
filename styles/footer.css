@@ -1,0 +1,49 @@
+.footer{
+	background-color: black;
+	color: white;
+	padding-top: 60px;
+    text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer .barra-footer{
+	background-color: grey;
+	text-align: center;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.footer .logo-footer{
+	width: 100%;
+}
+
+.footer ul{
+	padding-left: 0;
+	list-style: none;
+	margin: 0;
+}
+
+.footer ul li{
+	margin-bottom: 10px;
+}
+
+.footer .p{
+	color: white;
+	margin-bottom: 30px;
+}
+
+.footer a{
+	color: white;
+}
+
+.footer .redes{
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.footer .redes a{
+	margin: 0 7.5px;
+}
